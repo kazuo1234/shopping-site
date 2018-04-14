@@ -3,6 +3,7 @@
 .p-product__slideShow {
     display: grid;
     width: 100%;
+    border-bottom: #e3e8cf 1px solid;
 
     .slideShow__mainImage {
         max-width: 100%;
@@ -14,9 +15,10 @@
     }
 
     @media #{$screen_xs} {
-        grid-template-columns: repeat(5, minmax(1fr, 75px));
-        grid-template-rows: 5fr 1fr 1fr;
+        grid-template-columns: repeat(5, minmax(30px, 75px));
         grid-gap: 5px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
 
         .slideShow__mainImage {
             grid-column: 1 / span 5;
@@ -25,9 +27,11 @@
     }
 
     @media #{$screen_sm} {
-        grid-template-columns: 5fr 1fr 1fr;
+        grid-template-columns: 1fr max(75px) max(75px);
         grid-template-rows: repeat(5, minmax(1fr, 75px));
         grid-gap: 8px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
 
         .slideShow__mainImage {
             grid-column: 1;
