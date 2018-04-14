@@ -1,0 +1,46 @@
+.p-button {
+    display: inline-block;
+    margin: 0;
+    padding: 0.75em;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    &:disabled,
+    &.is-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.p-button--main {
+    background-color: $color_main;
+    color: #ffffff;
+}
+
+.p-button--md {
+    width: 120px;
+    height: 40px;
+}
+
+.p-button--lg {
+    width: 225px;
+    height: 55px;
+}
+
+.itemList__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-button--center {
+    margin-left: auto;
+    margin-right: auto;
+}

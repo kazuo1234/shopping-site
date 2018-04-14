@@ -1,0 +1,73 @@
+@import "../../foundation/variables";
+
+.p-footer {
+    .p-footer__topLink {
+        display: block;
+        width: 78px;
+        height: 11px;
+    }
+
+    hr {
+        padding: 0;
+        margin: 0;
+        background-color: $color_main;
+    }
+
+    ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        font-family: $ja_font;
+        color: $color_text;
+    }
+
+    // リストの１番目以外に"・"をつける
+    li:not(:first-child)::before {
+        content: "・";
+    }
+
+    small {
+        display: block;
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media #{$screen_xs} {
+        .p-footer__topLink {
+            margin: 23px auto 28.5px auto;
+
+        }
+
+        ul {
+            margin-top: 19px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 11px;
+        }
+
+    }
+
+    @media #{$screen_sm} {
+        .p-footer__topLink {
+            margin-left: auto;
+            margin-top: 60px;
+            margin-bottom: 19px;
+        }
+
+        ul {
+            margin-top: 34px;
+            margin-bottom: 29px;
+        }
+
+        li {
+            font-size: 12px;
+        }
+    }
+}

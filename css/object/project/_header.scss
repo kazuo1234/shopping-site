@@ -1,0 +1,86 @@
+@import "../../foundation/variables";
+
+.p-header {
+    @media #{$screen_xs} {
+        // pc用ヘッダーの表示
+        .p-header__pc {
+            display: none;
+        }
+        
+        .header__logo--sp {
+            display: block;
+            margin: 0 0 12px auto;
+            padding-top: 15px;
+            margin-right: auto;
+        }
+
+        .p-header__icon {
+            text-align: center;
+
+            img {
+                height: 24px;
+                width: 24px;
+                margin-right: 6px;
+                margin-left: 6px;
+            }
+        }
+        
+        .header__navigation--sp {
+            display: none;
+
+            ul {
+                z-index: 100;
+                width: 180px;
+                position: absolute;
+                top: 80px;
+                background: $color_boxBack;
+                right: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                border: 1px solid #eee;
+                padding: 10px;
+            }
+        }
+        
+    }
+
+    @media #{$screen_sm} {
+        // スマホ用ヘッダーの非表示
+        .p-header__sp {
+            display: none;
+        }
+
+        .p-header__pc {
+            display: grid;
+            grid-template-columns:150px 1fr 30px 30px;
+        }
+        .header__logo--pc {
+            grid-column: 1;
+            margin-top: 40px;
+        }
+
+        .header__navigation--pc {
+            margin-top: 65px;
+            margin-left: auto;
+
+            ul {
+                margin: 0;
+            }
+
+            li {
+                grid-column: 2;
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 6px;
+            }
+        }
+        .p-header__api {
+            width: 20px;
+            height: 20px;
+            margin-top: 60px;
+            margin-left: auto;
+        }
+    }
+}

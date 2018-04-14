@@ -1,0 +1,99 @@
+@import "../../foundation/variables";
+
+.p-shoppingGuide {
+    margin-bottom: 30px;
+
+    .p-shoppingGuide__box {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .shoppingGuide__grid {
+        display: grid;
+        grid-gap: 5px;
+
+    }
+
+    h3 {
+        margin-top: 0;
+        font-size: 16px;
+        color: $color_main;
+
+    }
+
+    .shoppingGuide__list {
+        font-size: 12px;
+
+    }
+
+    dt {
+        color: $color_main;
+        margin-bottom: 10px;
+
+        border-left-width: 12px;
+        border-left-style: solid;
+        border-left-color: $color_main;
+        padding-left: 2px;
+    }
+
+    dd {
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .shoppingGuide__cardImage {
+        width: 100%;
+    }
+
+    .itemList__image {
+        padding: 13px 13px 9px 13px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .itemList__description {
+        padding: 0 13px 20px 13px;
+        margin: 0;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+    }
+
+    .itemList__price {
+        padding: 0 13px 24px 13px;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    @media #{$screen_xs} {
+        .shoppingGuide__grid {
+            grid-template-columns: 1fr;
+        }
+
+        .shoppingGuide__title--sp {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+        }
+
+        .shoppingGuide__title--pc {
+            display: none;
+        }
+    }
+
+    @media #{$screen_sm} {
+        .shoppingGuide__grid {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 347px));
+        }
+
+        .shoppingGuide__title--sp {
+            display: none;
+        }
+
+        .shoppingGuide__title--pc {
+            width: 100%;
+            object-fit: none;
+            margin-bottom: 30px;
+        }
+    }
+}

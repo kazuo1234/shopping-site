@@ -1,0 +1,149 @@
+@import "../../foundation/variables";
+
+// p-sidevar__itemSearch
+.p-sidevar__itemSearch {
+    width: 100%;
+    background: $color_boxBack;
+    margin-bottom: 10px;
+
+    .sidebar__searchBtn {
+        width: 16px;
+        height: 16px;
+        position: relative;
+    }
+
+    .p-sidebar__textBox {
+        font-style: oblique;
+    }
+}
+
+@media #{$screen_xs} {
+    .p-sidevar__itemSearch {
+        height: 72px;
+
+        label {
+            display: none;
+        }
+
+        .p-sidebar__textBox {
+            width: calc(100% - 45px);
+            margin-top: 21px;
+            margin-left: 15px;
+            letter-spacing: 0.6px;
+            padding-left: 15px;
+        }
+
+        .sidebar__searchBtn {
+            left: calc(100% - 40px);
+            top: -24px;
+        }
+    }
+}
+
+@media #{$screen_sm} {
+    .p-sidevar__itemSearch {
+        height: 92px;
+
+        label {
+            display: block;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+
+        .p-sidebar__textBox {
+            width: calc(100% - 50px);
+            margin-top: 7px;
+            margin-left: 20px;
+            letter-spacing: 0.6px;
+            padding-left: 10px;
+        }
+
+        .sidebar__searchBtn {
+            left: 173px;
+            top: -24px;
+        }
+
+    }
+}
+
+.p-sidebar__info {
+    width: 100%;
+
+    h3 {
+        background: $color_main;
+        padding: 17px 0 16px 15px;
+        color: #ffffff;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        margin-top: 10px;
+        margin-bottom: 1px;
+    }
+
+    .p-info__box {
+
+        background-color: $color_boxBack;
+        text-align: center;
+    }
+
+    .p-info__text {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        text-align: left;
+        margin: 0;
+    }
+
+
+}
+
+@media #{$screen_xs} {
+    .p-info__box {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 12px;
+        padding: 11px 10px;
+
+        .p-info__image {
+            grid-row: 1 / span 2;
+            grid-column: 1;
+            width: 100%;
+        }
+
+        .p-info__text {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .p-info__button {
+            grid-row: 2;
+            grid-column: 2;
+            padding-top: 15px;
+            margin-bottom: 13px;
+        }
+
+    }
+
+}
+
+@media #{$screen_sm} {
+    .p-info__box {
+        width: 100%;
+
+        .p-info__image {
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+
+        .p-info__textArea {
+            width: 196px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        .p-info__button {
+            margin-bottom: 21px;
+        }
+    }
+
+}

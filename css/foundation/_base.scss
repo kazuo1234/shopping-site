@@ -1,0 +1,23 @@
+@import "./_variables.scss";
+
+body {
+    background: $color_base;
+    font-family: $ja_font;
+}
+
+h2 {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color_text;
+}
+
+a:hover {
+    color: $color_main;
+}

@@ -1,0 +1,14 @@
+@import "../../foundation/variables";
+
+.u-input_text {
+    background: $color_inputBox;
+    box-shadow: none;
+    border: none;
+    height: 30px;
+    padding: 0;
+    font-size: 11px;
+}
+
+::placeholder {
+    color: #b5b5b5;
+}

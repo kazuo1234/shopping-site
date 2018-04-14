@@ -1,0 +1,64 @@
+@import "../../foundation/variables";
+
+.p-accordion {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    a {
+        display: block;
+        padding: 17px 0 16px 15px;
+        text-decoration: none;
+        height: 20px;
+    }
+
+    label {
+        display: block;
+        // background: $color_main;
+        background: $color_main url("../images/top/next_icon.png") right 10px center no-repeat;
+        font-size: 12px;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 17px 0 16px 15px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+    }
+
+    input {
+        display: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        max-height: 0;
+        overflow-y: hidden;
+        transition: all 0.5s;
+        font-size: 12px;
+        background: $color_boxBack url("../images/top/next_icon_gray.png") right 10px center no-repeat;
+        margin-bottom: 1px;
+
+    }
+
+    // アコーディオンメニューがクリックされた場合の挙動
+    // メニュー直下のラベルのスタイル指定
+    .p-accordion__item:checked + label {
+        background: $color_main url("../images/top/down_icon.png") right 10px center no-repeat;
+    }
+    #sidebar__pageLink:checked ~ #pageLink__list li,
+    #sidebar__categories:checked ~ #categories__list li {
+        max-height: 45px;
+        opacity: 1;
+
+    }
+
+    #pageLink__list {
+        margin-bottom: 10px;
+    }
+}
+
+

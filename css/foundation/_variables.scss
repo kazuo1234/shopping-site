@@ -1,0 +1,22 @@
+// 画面サイズ
+$screen_xs: "(max-width:550px)"; // スマホ以下
+$screen_sm: "(min-width:551px)"; // タブレット以上
+$screen_md: "(min-width:1024px)"; // PC以上
+$screen_lg: "(min-width:1200px)"; // PC（大画面）以上
+$screen_md_under: "(max-width:1023px)"; // PC未満
+
+// フォント
+$ja_font: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+
+
+
+// 色
+$color_base: #f9f8f6;
+$color_base_dark: #e8e4da;
+$color_main_dark2: #e2ddd4;
+$color_main: #887f69;
+$color_text: #000000;
+$color_boxBack: #ffffff;
+$color_inputBox: #eeeeee;
+$color_carousel--active: #9d1a2d;
+$color_carousel--normal: #aaaaaa;

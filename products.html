@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+<div id="l-container">
+    <header id="l-header" class="p-header">
+        <div class="p-header__sp">
+            <a href="./index.html">
+                <img class="header__logo--sp" src="images/top_sp/logo.png" alt="ロゴ"
+                     srcset="images/top_sp/logo@2x.png 2x"/>
+            </a>
+            <div class="p-header__icon">
+                <a href="#"><img src="./images/top_sp/fb.png" srcset="./images/top_sp/fb@2x.png 2x" alt="フェイスブック"></a>
+                <a href="#"><img src="./images/top_sp/insta.png" srcset="./images/top_sp/insta@2x.png 2x" alt="インスタグラム"></a>
+                <img class="p-header__spBtnMenu" src="./imeges/top_sp/menu_icon"
+                     srcset="./images/top_sp/menu_icon@2x.png 2x" alt="メニュー">
+            </div>
+            <nav class="header__navigation--sp">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                    <li><a href="#">SHOPPING GUIDE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="p-header__pc">
+            <a href="./index.html">
+                <img class="header__logo--pc" alt="ロゴ" src="./images/top/logo.png" srcset="images/top/logo@2x.png 2x">
+            </a>
+            <nav class="header__navigation--pc">
+                <ul>
+                    <li><a href="#"><img src="./images/top/menu_login.png" alt="ログイン"></a></li>
+                    <li><a href="#"><img src="./images/top/menu_cart.png" alt="カート"></a></li>
+                    <li><a href="#"><img src="./images/top/menu_mypage.png" alt="マイページ"></a></li>
+                    <li><a href="#"><img src="./images/top/menu_guide.png" alt="SHOPPING GUIDE"></a></li>
+                </ul>
+            </nav>
+            <a href="#" class="p-header__api"><img src="./images/top/facebook.png" alt="facebook"></a>
+            <a href="#" class="p-header__api"><img src="./images/top/insta.png" alt="instagram"></a>
+        </div>
+    </header>
+    <article id="l-mainContent">
+        <ol class="u-breadcrumb">
+            <li><a class="u-breadcrumb__link" href="index.html">
+                <img class="u-breadcrumb__homeImage" src="./images/list/home_icon.png" alt="HOME">HOME</a></li>
+            <li><a class="u-breadcrumb__link" href="list.html">カテゴリー名</a></li>
+            <li><a class="u-breadcrumb__link" href="products.html">商品名</a></li>
+        </ol>
+        <section class="p-product u-box">
+            <div class="p-product__header">
+                <h1 class="p-product__title">商品名が入ります</h1>
+                <p class="p-product__productCd">fa0001-91</p>
+            </div>
+            <div class="p-product__slideShow">
+                <img id="display_img" class="slideShow__mainImage" src="./images/products/pro_img_01.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/pro_img_01.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/pro_img_02.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/pro_img_03.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/pro_img_04.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/pro_img_05.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/gray_pro_img.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/gray_pro_img.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/gray_pro_img.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/gray_pro_img.jpg" alt="写真">
+                <img class="slideshow__subImage" src="./images/products/gray_pro_img.jpg" alt="写真">
+            </div>
+            <img class="p-product__titleImg" src="images/products/title_color.png" alt="color/size">
+            <table class="p-product__table">
+                <thead>
+                <tr>
+                    <th class="table__headerColumn"></th>
+                    <th>カラー１</th>
+                    <th>カラー１</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>サイズ</th>
+                    <td class="p-table__center"><input id="color1" type="checkbox"></td>
+                    <td class="p-table__center"><input id="color2" type="checkbox"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="p-products__type">
+                <dl>
+                    <dt><img src="images/products/title_price.png"></dt>
+                    <dd><span class="p-products__price">¥1,000</span> (tax in)</dd>
+                    <dt><img src="images/products/title_quantity.png"></dt>
+                    <dd><input id="quantity" class="u-textBox" type="text"></dd>
+                </dl>
+                <input type="submit" class="btn p-button--main p-button--lg p-button--center" value="">
+            </div>
+            <div class="product_description">
+                <h3>商品説明</h3>
+                <dl>
+                    <dt>■説明タイトル説明タイトル説明タイトル説明タイトル</dt>
+                    <dd>
+                        説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明
+                        テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ
+                        スト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+                    </dd>
+                </dl>
+                <table class="p-product__table">
+                    <tr>
+                        <th class="table__headerColumn">カラー</th>
+                        <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                    </tr>
+                    <tr>
+                        <th>サイズ</th>
+                        <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="p-itemList2">
+            <h2>
+                <img class="itemList__title--pc" src="images/list/recent_pro_pc.png" alt="最近見た商品"/>
+                <img class="itemList__title--sp" src="images/list/title_recent_pro.png"
+                     srcset="images/list/title_recent_pro@2x.png 2x" alt="最近見た商品"/>
+            </h2>
+            <div class="itemList__grid">
+                <div class="u-box">
+                    <img src="images/top/item_07.jpg" class="itemList__image"/>
+                    <p class="itemList__description">商品名が入ります商品名が入ります商品名が入ります</p>
+                    <p class="itemList__price">¥10,000 (tax in)</p>
+                </div>
+                <div class="u-box">
+                    <img src="images/top/item_08.jpg" class="itemList__image"/>
+                    <p class="itemList__description">商品名が入ります商品名が入ります商品名が入ります</p>
+                    <p class="itemList__price">¥10,000 (tax in)</p>
+                </div>
+                <div class="u-box">
+                    <img src="images/top/item_09.jpg" class="itemList__image"/>
+                    <p class="itemList__description">商品名が入ります商品名が入ります商品名が入ります</p>
+                    <p class="itemList__price">¥10,000 (tax in)</p>
+                </div>
+            </div>
+        </section>
+        <section class="p-shoppingGuide">
+            <h2>
+                <img class="shoppingGuide__title--pc" src="images/top/title_guide.png" alt="SHOPPING ITEMS"/>
+                <img class="shoppingGuide__title--sp" src="images/top_sp/title_guide.png"
+                     srcset="images/top_sp/title_guide@2x.png 2x" alt="SHOPPING GUIDE"/>
+            </h2>
+            <div class="shoppingGuide__grid">
+                <div class="u-box p-shoppingGuide__box">
+                    <h3>お届けについて</h3>
+                    <img class="shoppinGuide__deliveryImage" src="./images/top/otodoke_banner.png"
+                         alt="合計5,000円以上で送料無料">
+                    <dl class="shoppingGuide__list">
+                        <dt>○○運輸</dt>
+                        <dd>送料 ¥000 円</dd>
+                        <dt>ゆうパケット</dt>
+                        <dd>ポスト投函となります。日時指定不可</dd>
+                    </dl>
+                </div>
+                <div class="u-box p-shoppingGuide__box">
+                    <h3>決済について</h3>
+                    <dl class="shoppingGuide__list">
+                        <dt>カード決済</dt>
+                        <dd><img class="shoppingGuide__cardImage" src="./images/top/cards.png" alt="利用可能カード一覧"></dd>
+                        <dt>代金引換</dt>
+                        <dd>代引き手数料が別途かかります</dd>
+                        <dt>銀行振込</dt>
+                        <dd>お振込手数料お客様負担。<br>ご入金後の発送となります。</dd>
+                    </dl>
+
+                </div>
+            </div>
+        </section>
+    </article>
+    <aside id="l-sidebar">
+        <div class="p-sidevar__itemSearch">
+            <form method="post" action="#">
+                <label for="input_item_search"><img src="./images/top/itemserch.png" alt="item search"></label>
+                <input type="text" id="input_item_search" class="u-input_text p-sidebar__textBox"
+                       placeholder="Search..">
+                <input type="image" class="sidebar__searchBtn" src="./images/top/search_icon.png" alt="検索ボタン">
+            </form>
+        </div>
+        <section class="p-sidebar__navigation">
+            <div class="p-accordion">
+                <input type="checkbox" id="sidebar__pageLink" class="p-accordion__item">
+                <label for="sidebar__pageLink">ページリンク</label>
+                <ul id="pageLink__list">
+                    <li><a href="./index.html">TOP</a></li>
+                    <li><a href="./list.html">一覧</a></li>
+                    <li><a href="./products.html">商品</a></li>
+                </ul>
+                <input type="checkbox" id="sidebar__categories" class="p-accordion__item">
+                <label for="sidebar__categories">CATEGORIES</label>
+                <ul id="categories__list">
+                    <li><a href="#">カテゴリー名</a></li>
+                    <li><a href="#">カテゴリー名</a></li>
+                    <li><a href="#">カテゴリー名</a></li>
+                    <li><a href="#">カテゴリー名</a></li>
+                    <li><a href="#">カテゴリー名</a></li>
+                    <li><a href="#">カテゴリー名</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="p-sidebar__info">
+            <h3>ABOUT</h3>
+            <div class="p-info__box">
+                <img src="./images/top/about_img.jpg" alt="お店の内装" class="p-info__image">
+                <div class="p-info__textArea">
+                    <p class="p-info__text">お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                </div>
+                <input type="image" class="p-info__button" src="./images/top/more_btn.png" alt="もっと見る">
+            </div>
+        </section>
+        <section class="p-sidebar__info">
+            <h3>SHOP INFO</h3>
+            <div class="p-info__box">
+                <img src="./images/top/shopinfo_img.jpg" alt="お店の内装" class="p-info__image">
+                <div class="p-info__textArea">
+                    <p class="p-info__text">お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                </div>
+                <input type="image" class="p-info__button" src="./images/top/more_btn.png" alt="もっと見る">
+            </div>
+        </section>
+    </aside>
+    <footer id="l-footer" class="p-footer">
+        <a href="#top" class="p-footer__topLink"><img src="./images/top/pagetop.png" alt="ページトップへ"></a>
+        <hr>
+        <ul>
+            <li><a href="#">特定商取引に基づく表記</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">マイページ</a></li>
+        </ul>
+        <small>copyright (C) APPLE BERRY all rights reserved.</small>
+
+
+    </footer>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import "../../foundation/variables";
+
+.p-product__slideShow {
+    display: grid;
+    width: 100%;
+
+    .slideShow__mainImage {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .slideshow__subImage {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    @media #{$screen_xs} {
+        grid-template-columns: repeat(5, minmax(1fr, 75px));
+        grid-template-rows: 5fr 1fr 1fr;
+        grid-gap: 5px;
+
+        .slideShow__mainImage {
+            grid-column: 1 / span 5;
+            grid-row: 1;
+        }
+    }
+
+    @media #{$screen_sm} {
+        grid-template-columns: 5fr 1fr 1fr;
+        grid-template-rows: repeat(5, minmax(1fr, 75px));
+        grid-gap: 8px;
+
+        .slideShow__mainImage {
+            grid-column: 1;
+            grid-row: 1 / span 5;
+        }
+    }
+}
